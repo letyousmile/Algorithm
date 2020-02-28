@@ -15,6 +15,7 @@ class Solution {
                 int mid;
                 while(low<=high){
                     mid = (low+high)/2;
+                    if(mid+1>j) break;
                     if(cache[i][mid]==cache[mid+1][j]){
                         if(cache[i][mid]>answer){
                             answer = cache[i][mid];
